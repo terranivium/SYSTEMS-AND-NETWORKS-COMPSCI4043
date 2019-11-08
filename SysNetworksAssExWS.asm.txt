@@ -1,7 +1,8 @@
 ; Wesley Scott, 2460681S
 ; Systems and Networks 2019 Assessed Exercise
 ; File: SysNetworksAssExWS.asm.txt
-; Assessed Coursework Exercise Source Code
+; Description: Cycles through an array (x), creating a sum (possum) and splitting positive and negative numbers.
+; Negative numbers are counted (negcount), as are all positive odd numbers (oddcount).
 
 ; HLL Source Code (written in Java, compiles and runs correctly)
 ; public class AssessedEXSandN{
