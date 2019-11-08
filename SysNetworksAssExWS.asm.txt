@@ -44,11 +44,11 @@ START		LEA 	R1,0[R0] 			; instantiate i with value 0
 			LEA 	R2,2[R0] 			; used in remainder calculation (constant 2)
 			LOAD 	R3,n[R0] 			; n array size, sets loop condition (constant 12)
 			LEA 	R5,1[R0]			; 1 constant for loop incrementing
-			LEA		R6,0[R0]			; reset regsiter storing sum (possum) value from previous run
-			LEA		R7,0[R0]			; reset regsiter storing negative number count value from previous run
-			LEA		R8,0[R0]			; reset regsiter storing positive odd number count value from previous run
-			LEA 	R9,0[R0]			; reset regsiter storing boolean for positive or negative jump in for loop from previous run
-			LEA 	R15,0[R0]			; reset regsiter storing remainder to calulate if odd number from previous run
+			LEA		R6,0[R0]			; reset register storing sum (possum) value 
+			LEA		R7,0[R0]			; reset register storing negative number count value 
+			LEA		R8,0[R0]			; reset register storing positive odd number count value 
+			LEA 	R9,0[R0]			; reset register storing boolean for positive or negative jump in for loop
+			LEA 	R15,0[R0]			; reset register storing remainder to calulate if odd number
 
 ; Main for loop, cycles through x[n-1]
 FORLOOP 	CMPLT 	R5,R1,R3 			; true if i<n (index lower than value of array length)
